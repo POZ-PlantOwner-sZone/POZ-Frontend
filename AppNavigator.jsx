@@ -1,8 +1,8 @@
-// import { createStackNavigator } from 'react-navigation-stack';
+// import { createNativeStackNavigator } from '@react-navigation/native-stack';
 // import LoginScreen from './src/screen/LoginScreen';
 // import RegisterPlantScreen from './src/screen/RegisterPlantScreen';
 
-// const AppNavigator = createStackNavigator(
+// const AppNavigator = createNativeStackNavigator(
 //     {
 //       Home: LoginScreen,
 //       Details: RegisterPlantScreen,

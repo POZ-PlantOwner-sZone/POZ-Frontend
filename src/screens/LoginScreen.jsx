@@ -5,7 +5,7 @@ import PWIcon from "../assets/icon/PWIcon.png"
 import facebook from "../assets/icon/facebook.png"
 import google from "../assets/icon/google.png"
 
-const LoginScreen = () => {
+const LoginScreen = ({ navigation }) => {
   
   
   const isButtonClick = () => {
@@ -48,7 +48,7 @@ const LoginScreen = () => {
       </View>
 
       {/* 로그인 */}
-      <TouchableOpacity style={commonStyles.button} onPress={() => isButtonClick()}>
+      <TouchableOpacity style={commonStyles.button} onPress={() => navigation.navigate("RegisterPlant")}>
         <Text style={commonStyles.buttonText}>로그인</Text>
       </TouchableOpacity>
       

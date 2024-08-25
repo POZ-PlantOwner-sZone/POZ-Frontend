@@ -2,7 +2,7 @@ import React from "react";
 import { TouchableOpacity, View, Text, StyleSheet, TextInput, Image } from "react-native";
 import registerButton from "../assets/icon/registerIcon.png"
 
-const RegisterPlantScreen = () => {
+const RegisterPlantScreen = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
@@ -20,7 +20,7 @@ const RegisterPlantScreen = () => {
                 <Image source={registerButton} style={styles.icon}/>
             </TouchableOpacity>
         </View>
-        <TouchableOpacity style={styles.laterRegister}>
+        <TouchableOpacity style={styles.laterRegister} onPress={() => navigation.navigate("Home")}>
             <Text style={styles.laterRegisterText}>나중에 등록하기</Text>
         </TouchableOpacity>
     </View>

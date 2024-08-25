@@ -1,25 +1,16 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-// import { createStackNavigator } from "@react-navigation/stack";
-import LoginScreen from './src/screen/LoginScreen';
-import RegisterPlantScreen from './src/screen/RegisterPlantScreen';
-// import AppNavigator from './AppNavigator';
+import StackNavigation from './src/navigations/Stack';
 
 const App = () => {
 
-  // const Stack = createStackNavigator();
+  // options={{tabBarStyle: {display: 'none'}}}
 
   return (
     <NavigationContainer>
-      {/* <LoginScreen /> */}
-      <RegisterPlantScreen />
-      {/* <Stack.Navigator initialRouteName="Start"> */}
-        {/* <Stack.Screen name="LoginScreen" component={LoginScreen} /> */}
-        {/* <Stack.Screen name="Main" component={Main} /> */}
-      {/* </Stack.Navigator> */}
+      <StackNavigation />
     </NavigationContainer>
   );
 };
 
 export default App;
-// export default createAppContainer(AppNavigator);
