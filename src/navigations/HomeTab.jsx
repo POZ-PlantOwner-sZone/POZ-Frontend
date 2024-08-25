@@ -4,12 +4,12 @@ import HomeScreen from '../screens/HomeScreen';
 
 const Tab = createBottomTabNavigator();
 
-const TabNavigation = () => {
+const HomeTab = () => {
     return (
-        <Tab.Navigator>
-            <Tab.Screen name='Home' component={HomeScreen} />
-        </Tab.Navigator>
+        <Tab.Navigator initialRouteName="Login">
+            <Tab.Screen name="Home" component={HomeScreen}/>
+      </Tab.Navigator>
     );
 };
 
-export default TabNavigation;
+export default HomeTab;

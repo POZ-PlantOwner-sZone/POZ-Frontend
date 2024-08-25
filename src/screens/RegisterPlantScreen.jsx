@@ -20,7 +20,7 @@ const RegisterPlantScreen = ({ navigation }) => {
                 <Image source={registerButton} style={styles.icon}/>
             </TouchableOpacity>
         </View>
-        <TouchableOpacity style={styles.laterRegister} onPress={() => navigation.navigate("Home")}>
+        <TouchableOpacity style={styles.laterRegister} onPress={() => navigation.navigate("HomeTab")}>
             <Text style={styles.laterRegisterText}>나중에 등록하기</Text>
         </TouchableOpacity>
     </View>

@@ -1,23 +1,21 @@
 import React from 'react';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import LoginScreen from '../screens/LoginScreen';
 import RegisterPlantScreen from '../screens/RegisterPlantScreen';
-import HomeScreen from '../screens/HomeScreen';
+import HomeTab from './HomeTab';
 
 const Stack = createNativeStackNavigator();
 
 
-const StackNavigation = () => {
+const SignInStack = () => {
     return (
       <Stack.Navigator initialRouteName="Login" screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Login" component={LoginScreen}/>
         <Stack.Screen name="RegisterPlant" component={RegisterPlantScreen}/>
-        <Stack.Screen name="Home" component={HomeScreen}/>
+        <Stack.Screen name="HomeTab" component={HomeTab} />
       </Stack.Navigator>
       );
 };
 
-export default StackNavigation;
+export default SignInStack;

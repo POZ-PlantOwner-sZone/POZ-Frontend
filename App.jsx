@@ -1,14 +1,11 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import StackNavigation from './src/navigations/Stack';
+import SignInStack from './src/navigations/SignInStack';
 
 const App = () => {
-
-  // options={{tabBarStyle: {display: 'none'}}}
-
   return (
     <NavigationContainer>
-      <StackNavigation />
+      <SignInStack />
     </NavigationContainer>
   );
 };

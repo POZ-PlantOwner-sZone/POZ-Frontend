@@ -6,16 +6,15 @@ import facebook from "../assets/icon/facebook.png"
 import google from "../assets/icon/google.png"
 
 const LoginScreen = ({ navigation }) => {
-  
-  
-  const isButtonClick = () => {
-    setUsername("");
-    setPassword("");
-    Alert.alert("username: " + username)
-  }
-
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+
+  const isButtonClick = (navigation) => {
+    setUsername("");
+    setPassword("");
+    Alert.alert("로그인에 성공하였습니다.")
+    navigation.navigate("RegisterPlant")
+  }
 
   return (
     <View style={styles.container}>
@@ -48,7 +47,7 @@ const LoginScreen = ({ navigation }) => {
       </View>
 
       {/* 로그인 */}
-      <TouchableOpacity style={commonStyles.button} onPress={() => navigation.navigate("RegisterPlant")}>
+      <TouchableOpacity style={commonStyles.button} onPress={() => isButtonClick(navigation)}>
         <Text style={commonStyles.buttonText}>로그인</Text>
       </TouchableOpacity>
       
