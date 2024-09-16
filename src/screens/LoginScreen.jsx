@@ -94,7 +94,8 @@ const styles = StyleSheet.create({
     width: "85%",
   },
   textBG: {
-    backgroundColor: "#F1F1F1",
+    // backgroundColor: "#F1F1F1",
+    backgroundColor: "lightgray",
     borderRadius: 10,
     flexDirection: "row",
     padding: "4%",
@@ -103,7 +104,8 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   textHolder: {
-    color: "#BCBCBC",
+    // color: "#BCBCBC",
+    color: "gray",
   },
   textInput: {
     paddingLeft: "20%",

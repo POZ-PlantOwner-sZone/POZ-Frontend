@@ -12,8 +12,8 @@ const HomeTab = () => {
         <Tab.Navigator initialRouteName="Login">
             <Tab.Screen name="HOME" component={HomeScreen} options={{headerShown: false}}/>
             <Tab.Screen name="CHARACTER" component={CharacterScreen} options={{headerShown: false}}/>
-            <Tab.Screen name="MY" component={MyScreen} options={{headerShown: false}}/>
             <Tab.Screen name="LIKE" component={LikeScreen} options={{headerShown: false}}/>
+            <Tab.Screen name="MY" component={MyScreen} options={{headerShown: false}}/>
       </Tab.Navigator>
     );
 };
