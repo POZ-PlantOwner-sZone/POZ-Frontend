@@ -19,14 +19,14 @@ const HomeScreen = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
-      <ScrollView style={styles.scroll}>
+      <ScrollView>
         <View style={styles.petPlantSection}>
           <Section text="반려식물 사진 찍기" image={camera}/>
           <Section text="반려식물 업로드" image={armchair}/>
         </View>
         <Text style={styles.title}>이번 달 추천 상품</Text>
         <View>
-        <RecProduct />
+          <RecProduct />
         </View>
         <Text style={styles.title}>캐릭터 상점</Text>
         <View>
@@ -42,11 +42,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-  },
-  // scroll: {
-  //   paddingBottom: 30,
-  // },
-  petPlantSection: {
+  }, petPlantSection: {
     flexDirection: "row",
     justifyContent: "space-around",
 
