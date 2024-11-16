@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import LoginScreen from '../screens/LoginScreen';
 import RegisterPlantScreen from '../screens/RegisterPlantScreen';
 import HomeTab from './HomeTab';
+import RecordPlantStack from './RecordPlantStack';
 
 const Stack = createNativeStackNavigator();
 
@@ -13,6 +14,7 @@ const SignInStack = () => {
       <Stack.Navigator initialRouteName="Login" screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Login" component={LoginScreen}/>
         <Stack.Screen name="RegisterPlant" component={RegisterPlantScreen}/>
+        <Stack.Screen name="RecordPlantStack" component={RecordPlantStack} />
         <Stack.Screen name="HomeTab" component={HomeTab} />
       </Stack.Navigator>
       );

@@ -1,5 +1,5 @@
-import plant1 from "../assets/img/recommentPlant/plant1.png"
-import plant2 from "../assets/img/recommentPlant/plant2.png"
+import plant1 from "../assets/img/recommendPlant/plant1.png"
+import plant2 from "../assets/img/recommendPlant/plant2.png"
 
 const RecPlantDummy = {
   title: "이번 달 추천 상품",

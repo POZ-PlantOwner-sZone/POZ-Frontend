@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { TouchableOpacity, Dimensions, View, Text, StyleSheet, Image, FlatList } from "react-native";
 import RecPlantDummy from "./RecPlantDummy"
-import star from "../assets/img/recommentPlant/star.png"
+import star from "../assets/img/recommendPlant/star.png"
 
 const Product = ({text1, text2, image}) => {
     return (
