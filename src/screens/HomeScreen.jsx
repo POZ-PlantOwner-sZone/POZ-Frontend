@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { TouchableOpacity, ScrollView, View, Text, StyleSheet, TextInput, Alert, Image } from "react-native";
-import Shop from "../component/Shop"
 
-import camera from "../assets/img/home/camera.png"
-import armchair from "../assets/img/home/armchair.png"
+import camera from "../assets/img/home/camera.png";
+import armchair from "../assets/img/home/armchair.png";
 import RecProduct from "../component/RecProduct";
+import GreenLetter from "../component/GreenLetter";
 
 const Section = ({text, image}) => {
   return (
@@ -28,9 +28,9 @@ const HomeScreen = ({ navigation }) => {
         <View>
           <RecProduct />
         </View>
-        <Text style={styles.title}>캐릭터 상점</Text>
+        <Text style={styles.title}>오늘의 그린레터</Text>
         <View>
-          <Shop />
+          <GreenLetter />
         </View>
       </ScrollView>
     </View>
