@@ -83,8 +83,10 @@ const styles = StyleSheet.create({
         shadowRadius: 10,
     },
   plantText: {
-    fontWeight: "bold",
+    // fontWeight: "bold",
     fontSize: 15,
+    paddingLeft: 10,
+    paddingTop: 10,
   },
 });
 
