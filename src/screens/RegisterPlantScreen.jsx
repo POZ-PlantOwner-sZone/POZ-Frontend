@@ -8,13 +8,14 @@ const RegisterPlantScreen = ({ navigation }) => {
     <View style={styles.container}>
         <View style={styles.textContent}>
             <View style={styles.detailText}>
-                <Text style={styles.text}>안녕하세요, 식물 주치의 POZ입니다.</Text>
+                <Text style={styles.text}>안녕하세요</Text>
                 <Text style={styles.text}> 당신의 식물을 등록해 주세요.</Text>
             </View>
             <TextInput style={styles.textInput}
                 placeholder="식물 이름을 입력해 주세요."
             />
         </View>
+        <Text style={styles.textStyle}>식물 등록하러 가기</Text>
         <View style={styles.registerContent}>
             <TouchableOpacity style={styles.iconSection}>
                 <Image source={registerButton} style={styles.icon}/>
@@ -48,7 +49,7 @@ const styles = StyleSheet.create({
   },
   textContent: {
     width: "70%",
-    margin: "5%",
+    margin: "20%",
   },
   registerContent: {
     marginTop: "5%",
@@ -66,6 +67,12 @@ const styles = StyleSheet.create({
   },
   iconSection: {
     margin: "4%",
+  },
+  text: {
+    padding: 2,
+  },
+  textStyle: {
+    marginBottom: -20,
   },
 });
 

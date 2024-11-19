@@ -11,7 +11,7 @@ const LikeScreen = ({ navigation }) => {
         <View style={styles.subcontainer}>
           <Text style={styles.title}>나의 식물 기록</Text>
         </View>
-        <RecordPlant />
+        <RecordPlant navigation={navigation} />
         <View style={styles.recPlant}>
           <Text style={[{ fontWeight: "bold" }]}> 오늘의 식물</Text>
           <Text style={[{ color: "#367B4D" }]}>더보기</Text>
